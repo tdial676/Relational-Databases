@@ -1,0 +1,22 @@
+A5 Part D: Procedural SQL Applications in the Final Project
+Collaboration: (Optional, include student names and emails)
+Final Project Topic: Tinder For Athletes
+
+Part D Answers:
+UDF(s): get_age(d DATE) RETURNS INT DETERMINISTIC
+  This fucntion will take in the user's birthday and calculate 
+  their age. This will be helpful when trying to match athletes with 
+  those closer to their demographic. This would also help us manage
+  who can access the app as we want to incorporate an age limit of 18.
+
+Procedure(s): update_email(user_ID CHAR, new_email VARCHAR)
+  This will be useful for when users want to update their emails
+  as they need to sign in each time with their email. Therefore, if
+  they forget their email or lose their email, they can update it. 
+  Also, can be useful when users delete their account.
+
+* Trigger(s): hash_and_store BEFORE INSERT
+  I was thinking that before we insert a new user, we can hash their 
+  password to improve security and then store the hashed password instead 
+  of the user defined password. 
+
